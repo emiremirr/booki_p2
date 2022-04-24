@@ -123,14 +123,30 @@
        
       }
       /* les plus polpulaires */
-
-      .p_fig{
+      .populaires {
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
+    }
+      .p_fig{
+        display: flex;
+        flex-direction: column;
         width: 100%;
         justify-content: center;
         margin: 3% 0 0 0;
     }
+
+    .fig_img_p {
+        height: 11rem;
+    width: 11rem;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    object-fit: cover;
+    flex: 1;
+    border: 5px solid white;
+    box-sizing: content-box;
+    }
+
 
     .fig_img_h {
             box-sizing: border-box;
@@ -249,4 +265,3 @@
     .foot_ ul {
         list-style: none;
     }
-}
