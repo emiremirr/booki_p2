@@ -1,0 +1,252 @@
+/* mobile */
+@media  (min-width: 769px) and (max-width: 992px)
+{
+
+    body {
+        font-family: 'Raleway', sans-serif;
+        margin: 0%  5%;
+        max-width: 768px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 14px;
+    }
+    #logo_desktop{
+        display: none;
+       
+    }
+
+    #logo_mobile{
+        display:flex;
+        align-items: center;
+        justify-content: center;}
+    nav {
+        flex-direction: column;
+        justify-content: center;
+       
+    }
+
+    nav img {
+        justify-content : center;
+        align-items : center
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content : center;
+        align-items : center;
+        padding: 0;
+    }
+
+    nav li {
+        width: 100%;
+        border-bottom: 2px solid #F2F2F2;
+        align-items: center;
+    }
+
+    #div_ul{
+        display: block;
+        flex: 1 AUTO;
+        width: 100%;
+    }
+
+    nav li:hover{
+        border-bottom: 2px solid #0065FC;  
+        color: #0065FC;
+        border-top: hidden;
+      }
+
+      nav a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      
+      nav a:hover{
+        color: #0065FC;
+      }
+      
+/* recherche ville */ 
+
+      .filtres{
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+      }
+
+      .flex_filtres{
+          display: flex;
+          flex-wrap: wrap;
+          
+      }
+
+      #bouton_rechercher{
+       display: none;
+       
+    }
+
+    
+      #bouton_loupe{
+        visibility: visible;
+        height: 40px;
+        width: 40px;
+        background-color: #0065FC;
+        color: white;
+        border: none;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    
+
+    #button_afficher {
+        background-color: white;
+        margin-top: 10px;
+    }
+
+
+    /*filtres*/
+    .h2_filtre {
+        align-self: flex-start;
+        padding-left: 20px;
+    }
+
+
+    .width_activite{
+        width: 100%;
+        align-items: center;
+    }
+    
+      .section_hebergements {
+          display: flex;
+          flex-direction: column-reverse;
+          justify-content: space-between;
+       
+      }
+      /* les plus polpulaires */
+
+      .p_fig{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+        margin: 3% 0 0 0;
+    }
+
+    .fig_img_h {
+            box-sizing: border-box;
+            height: 6rem;
+            border: 5px solid white;
+            border-top-left-radius: 20px;
+            object-fit: cover;
+        }
+    
+
+
+      /*  hebergement à Marseille */
+      .h_fig{
+        border-radius: 20px;
+        box-shadow: 0px 1px 12px 0px rgb(0 0 0 / 75%);
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 5%;
+      }
+
+
+     
+      #hebergements_Marseille{
+        
+        margin-bottom: 5%;
+        padding: 0;
+        background-color: white;
+        width: 100%;
+      }
+      #Marseille{
+    
+        display: flex;
+        flex-direction: column;
+    
+    }
+
+    
+    .h_ {
+        width: auto;
+        height: auto;
+        border-radius: 50px;
+    }
+    /* activités à Marseille */
+       
+
+    /* taille image activite */
+        .fig_img_a{
+            height: 130px;
+            width: 100%;
+        }
+        .fig_img_a_flex{
+            height: 130px;
+            width: 100%;
+        }
+
+        
+        .a_fig{
+            margin-bottom: 5%;
+        }
+
+        .a_fig img {
+            height: 9rem;
+        }
+
+        .figcaption_activite {
+            display: flex;
+            width: 100%;
+            height: 3rem;
+            align-items: center;
+            margin-left: 10px;
+        }
+        /* mise en place de la grille */
+        .activites_Marseille {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            }
+        /* placement ds la grille activite */
+        #vieux_port {
+            grid-column:1 ;
+            grid-row: 2;
+        }
+
+       
+        
+        }
+        #calanques {
+            grid-column: 1;
+            grid-row: 1;
+        }
+        #iles_du_frioul{
+            grid-column: 1;
+            grid-row: 1;
+        }
+        .a_flex2{
+            grid-column: 1;
+            grid-row: 1;
+        }
+
+
+
+      /* footer */
+
+      .footer{
+        display: flex;
+        flex-direction: column;
+    }
+    .foot_ {
+        background-color:#F2F2F2;
+        float: left;
+        width : 100%;
+        padding: 0;
+    
+    }
+
+    .foot_ ul {
+        list-style: none;
+    }
+}

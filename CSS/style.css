@@ -5,7 +5,7 @@ body {
     max-width: 1440px;
     margin-left: auto;
     margin-right: auto;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 
@@ -14,9 +14,6 @@ a {
     text-decoration:none;
 }
 
-p {
-    font-size: 12px;
-}
 /* Header */
 
 #logo_desktop{
@@ -359,7 +356,7 @@ figcaption p {
 
 .fig_img_p {
     height: 8rem;
-    width: 9reù;
+    width: 9rem;
     border: 5px solid white;  
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -469,211 +466,4 @@ figcaption p {
 }
 .foot_ ul {
     list-style: none;
-}
-
-
-/* mobile */
-@media screen and (max-width: 768px)
-{
-    #logo_desktop{
-        display: none;
-       
-    }
-
-    #logo_mobile{
-        display:flex;
-        align-items: center;
-        justify-content: center;}
-    nav {
-        flex-direction: column;
-        justify-content: center;
-       
-    }
-
-    nav img {
-        justify-content : center;
-        align-items : center
-    }
-
-    nav ul {
-        display: flex;
-        flex-direction: row;
-        justify-content : center;
-        align-items : center;
-        padding: 0;
-    }
-
-    nav li {
-        width: 100%;
-        border-bottom: 2px solid #F2F2F2;
-        align-items: center;
-    }
-
-    #div_ul{
-        display: block;
-        flex: 1 AUTO;
-        width: 100%;
-    }
-
-    nav li:hover{
-        border-bottom: 2px solid #0065FC;  
-        color: #0065FC;
-        border-top: hidden;
-      }
-
-      nav a {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-      
-      nav a:hover{
-        color: #0065FC;
-      }
-      
-/* recherche ville */ 
-
-      .filtres{
-        display: flex;
-        flex-direction: column;
-        justify-content: left;
-      }
-
-      .flex_filtres{
-          display: flex;
-          flex-wrap: wrap;
-          
-      }
-
-      #bouton_rechercher{
-       display: none;
-       
-    }
-
-    
-      #bouton_loupe{
-        visibility: visible;
-        height: 40px;
-        width: 40px;
-        background-color: #0065FC;
-        color: white;
-        border: none;
-        border-top-right-radius: 10px;
-        border-bottom-right-radius: 10px;
-    }
-    
-    /*filtres*/
-    .h2_filtre {
-        align-self: flex-start;
-        padding-left: 20px;
-    }
-
-
-    .width_activite{
-        width: 100%;
-        align-items: center;
-    }
-    
-      .section_hebergements {
-          display: flex;
-          flex-direction: column-reverse;
-          justify-content: space-between;
-       
-      }
-      /* les plus polpulaires */
-
-      .p_fig{
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        justify-content: center;
-        margin: 2% 0;
-    }
-
-    .fig_img_h {
-        height: 278px;
-        width: 98%;
-        border: 5px solid white;  
-        border-top-left-radius: 20px;
-        object-fit: cover;
-    
-    }
-
-
-      /*  hebergement à Marseille */
-      .h_fig{
-        border-radius: 20px;
-        box-shadow: 0px 1px 12px 0px rgb(0 0 0 / 75%);
-        margin-right: auto;
-        margin-left: auto;
-        margin-bottom: 5%;
-      }
-
-
-     
-      #hebergements_Marseille{
-        
-        margin-bottom: 5%;
-        padding: 0;
-        background-color: white;
-      }
-      #Marseille{
-    
-        display: flex;
-        flex-direction: column;
-    
-    }
-
-    #button_afficher {
-        background-color: white;
-        margin-top: 10px;
-    }
-    
-
-    /* activités à Marseille */
-        .section_activites{
-            display: flex;
-            flex-direction: column;
-        }
-        .activites_Marseille{
-            display: flex;
-            flex-direction: column;
-        }
-
-    /* taille image activite */
-        .fig_img_a{
-            height: 130px;
-            width: 100%;
-        }
-        .fig_img_a_flex{
-            height: 130px;
-            width: 100%;
-        }
-
-        
-        .a_fig{
-            margin-bottom: 5%;
-        }
-
-        .a_fig img {
-            height: 260px;
-        }
-
-      /* footer */
-
-      .footer{
-        display: flex;
-        flex-direction: column;
-    }
-    .foot_ {
-        background-color:#F2F2F2;
-        float: left;
-        width : 100%;
-        padding: 0;
-    
-    }
-
-    .foot_ ul {
-        list-style: none;
-    }
 }
