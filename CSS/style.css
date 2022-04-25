@@ -18,6 +18,7 @@ a {
 
 #logo_desktop{
     width: 30%;
+    margin-left: 10%;
 }
 
 #logo_mobile{
@@ -228,7 +229,7 @@ nav li:hover{
 }
 
 #titre_marseille{
-   
+    padding-left: 16px;
     padding-top: 5px;
 }
 
@@ -240,12 +241,6 @@ nav li:hover{
 
 }
 
-.les_plus_populaires{
-    background-color: #F2F2F2;
-    border-radius: 10px;
-    padding: 5px 15px 5px 15px;
-    padding-right: 5%;   
-}
 
 figure > a{
     display: flex;
@@ -307,6 +302,7 @@ figcaption p {
 #button_afficher {
     border: none;
     background-color: #F2F2F2;
+    padding-left: 16px
 }
 .etoiles{
     font-size: smaller;
@@ -329,11 +325,13 @@ figcaption p {
 }
 /* les plus populaires */
 
-.les_plus_polulaires{
-    background-color:#F2F2F2;
-    padding: 25px 15px;
+.les_plus_populaires{
+    background-color: #F2F2F2;
+    border-radius: 10px;
+    padding: 5px 15px 5px 15px;
     
 }
+
 
 #titre_populaires{
     display: flex;
@@ -389,8 +387,9 @@ figcaption p {
   
 }
 .activites_Marseille {
-    margin-right: 10%;
-    width: 100%;
+    margin-right: auto;
+    width: 96%;
+    margin-left: auto;
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
