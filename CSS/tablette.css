@@ -124,21 +124,26 @@
       }
       /* les plus polpulaires */
       .populaires {
-        display: flex;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
         }
-    }
+    
+        .les_plus_populaires {
+            padding: 0 0 2% 0;
+        }
+
       .p_fig{
         display: flex;
         flex-direction: row;
-        width: 100%;
+        width: 90%;
         justify-content: center;
-        margin: 3% 0 0 0;
+        margin-right: auto;
+        margin-left: auto;
     }
 
     .fig_img_p {
-        height: 11rem;
-    width: 11rem;
+        height: 8rem;
+    width: 4rem;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     object-fit: cover;
@@ -180,7 +185,7 @@
      
       #hebergements_Marseille{
         
-        margin-bottom: 5%;
+        margin-bottom: 2% 0;
         padding: 0;
         background-color: white;
         width: 100%;
@@ -271,3 +276,6 @@
     .foot_ ul {
         list-style: none;
     }
+}
+
+     
