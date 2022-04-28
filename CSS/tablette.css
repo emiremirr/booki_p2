@@ -72,6 +72,8 @@
         display: flex;
         flex-direction: column;
         justify-content: left;
+        align-items: normal;
+        justify-items: normal;
       }
 
       .flex_filtres{
@@ -160,12 +162,11 @@
         .figcaption_populaire {
             display: flex;
             flex-direction: column;
-            /* width: 66%; */
             background-color: white;
             border-top-right-radius: 20px;
             justify-content: space-between;
             padding-bottom: 4%;
-            flex: 1;
+            font-size: 90%;
         }
 
       /*  hebergement à Marseille */
@@ -199,7 +200,7 @@
      
       #hebergements_Marseille{
         
-        margin-bottom: 2% 0;
+        margin-bottom: 2%;
         padding: 0;
         background-color: white;
         width: 100%;
