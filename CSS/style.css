@@ -5,7 +5,7 @@ body {
     max-width: 1440px;
     margin-left: auto;
     margin-right: auto;
-    font-size: 14px;
+    font-size: large;
 }
 
 
@@ -13,6 +13,9 @@ a {
     color: black;
     text-decoration:none;
 }
+
+a:hover
+
 
 /* Header */
 
@@ -48,8 +51,12 @@ nav li{
 nav li:hover{
     color: #0065FC;
     border-top: 2px solid #0065FC;
-   
+    padding: 40px;
 }
+
+
+
+
     /* filtres */
  
 .section_filtres {
@@ -300,9 +307,11 @@ figcaption p {
 }
 
 #button_afficher {
+    padding-top: 5%;
     border: none;
     background-color: #F2F2F2;
-    padding-left: 16px
+    padding-left: 4%;
+    font-size: larger;
 }
 .etoiles{
     font-size: smaller;
@@ -382,10 +391,14 @@ figcaption p {
 /* activités à marseille */
 
 .section_activites{
-    margin-top: 5%;
-   
-  
+    margin-top: 5%;  
 }
+
+#titre_activites{
+    margin-left: 3%;
+}
+
+
 .activites_Marseille {
     margin-right: auto;
     width: 96%;
