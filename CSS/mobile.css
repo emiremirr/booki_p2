@@ -199,7 +199,7 @@
 
     .fig_img_h {
             box-sizing: border-box;
-            height: 6rem;
+            height: 8rem;
             border: 5px solid white;
             border-top-left-radius: 20px;
             object-fit: cover;
@@ -238,11 +238,25 @@
         height: auto;
         border-radius: 50px;
     }
+
+    .figcaption_hergements {
+        font-size: 100%;
+    }
+
+
     /* activités à Marseille */
+
+
         .section_activites{
             display: flex;
             flex-direction: column;
         }
+
+        .titre_activites {
+            margin-left: 6%;
+            margin-bottom: 2%;
+        }
+
         .activites_Marseille{
             display: flex;
             flex-direction: column;
@@ -293,6 +307,11 @@
     .foot_ ul {
         list-style: none;
     }
+
+    .foot_ li {
+        margin-bottom: 3%;
+    }
+
 }
 
 @media  (min-width:500px) and (max-width: 768px)

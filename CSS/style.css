@@ -477,3 +477,7 @@ figcaption p {
 .foot_ ul {
     list-style: none;
 }
+
+.foot_ li {
+    margin-bottom: 3%;
+}
