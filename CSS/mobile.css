@@ -193,7 +193,7 @@
         justify-content: space-between;
         padding: 4%;
         flex: 1;
-        font-size: medium;
+        font-size: small;
     }
 
 
@@ -278,7 +278,7 @@
         }
 
         .a_fig img {
-            height: 9rem;
+            height: 14rem;
         }
 
         .figcaption_activite {
@@ -317,7 +317,7 @@
 @media  (min-width:500px) and (max-width: 768px)
 {
     .fig_img_h {
-        height: 9rem;
+        height: 14rem;
     }
 
     .fig_img_p {
@@ -326,5 +326,16 @@
     }
     .figcaption_populaire {
         font-size: large;
+    }
+
+    @media screen and (max-width: 320px){
+
+        .fig_img_p { 
+            height: 6rem;
+            width: 6rem;
+        }   
+        .figcaption_populaire{
+            font-size: small;
+        }
     }
 }

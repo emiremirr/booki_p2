@@ -8,7 +8,7 @@ body {
     font-size: large;
 }
 
-
+/* suppresion effet lien  */
 a {
     color: black;
     text-decoration:none;
@@ -26,6 +26,7 @@ a {
     display: none;
 }
 
+/* placement des élements ds la nav */
 nav {
     display: flex;
     justify-content: space-between;
@@ -33,7 +34,7 @@ nav {
 }
 
 
-
+/* placement des élements dans ul */
 nav ul {
     display: flex;
     list-style: none;
@@ -45,25 +46,28 @@ nav ul {
 nav li{
     padding: 40px;
 }
-
+/* changement au clic */
 nav li:hover{
     color: #0065FC;
     border-top: 2px solid #0065FC;
     padding: 40px;
 }
 
+/* changement au clic */
+nav a:hover {
+    color: #0065FC;
+}
 
 
 
-    /* filtres */
+
+    /* SECTION filtres */
  
 .section_filtres {
     margin:2%;
 }
 
-#h2_filtre {
-    padding-right: 2%;
-}
+/* formulaire */
 
 #filtre_form{
     display: flex;
@@ -114,11 +118,16 @@ nav li:hover{
     justify-items: center;
     margin: 20px 0 20px 0;
 }
+#h2_filtre {
+    padding-right: 2%;
+}
+
+/* filtre :postionnement des éléments */
 .flex_filtres {
     display: flex;
     flex-direction: row;
 }
-
+/* filtre : mise en formes des éléments/ */
 .f_ {
     position: relative;
     height: 48px;
@@ -134,7 +143,7 @@ nav li:hover{
     margin: 20px 20px;
 }
 
-
+/* filtre : mise en formes du fond des icones/ */
  .f_ i {
      position: absolute;
      background-color: #DEEBFF;
@@ -144,7 +153,8 @@ nav li:hover{
      width: 50px;
      right: 75%;
  }
-
+ 
+/* filtre : mise en formes des icones/ */
  .f_ i::before{
     display: flex;
     justify-content: center;
@@ -153,13 +163,13 @@ nav li:hover{
     width: 50px;
     font-size:20px;
 }
-
+/* filtre : zoom au clic */
 .f_:hover{
     transform: scale(1.1); 
   }
 
 
-/*positionnement des icones */ 
+/* ajustement des positionnement des icones */ 
 
 .fa-money-bill-wave {
     position: absolute;
@@ -189,13 +199,14 @@ nav li:hover{
     width: 50px;
     left: -5px;
 } 
-
+/* div icone i */
 .information {
     display: flex;
     flex-direction: row;
     align-items: center;
     margin-bottom: 2%;
 }
+/* mise en page de l'icone */
 .information i{
     background-color: white;
     border: 1px solid #DEEBFF;
@@ -211,7 +222,7 @@ nav li:hover{
 }
 
 
-/* Hébergements à Marseille */
+/* section Hébergements à Marseille */
 
 
 .section_hebergements{
@@ -224,7 +235,7 @@ nav li:hover{
 }
 
 
-
+/* Hébergements : disposition des élements en colonnes */
 #hebergements_Marseille{
     display: flex;
     flex-direction: column;
@@ -235,11 +246,12 @@ nav li:hover{
     width: 70%;
 }
 
+/* Hébergements : titre de la colonne */
 #titre_marseille{
     padding-left: 16px;
     padding-top: 5px;
 }
-
+/* Hébergements : disposition des élements en 3*2 */
 #Marseille{
     
     display: flex;
@@ -249,13 +261,20 @@ nav li:hover{
 }
 
 
-figure > a{
+/* figure > a{
     display: flex;
     flex-direction: column;
+} */
+
+
+/* Hébergements : préparation de l'image et légende */
+.h_fig{
+    margin: 5px 5px 5px 10px;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
 }
-
-
-
+/* Hébergements : image */
 .fig_img_h {
     height: 115px;
     width: auto;
@@ -266,6 +285,8 @@ figure > a{
 }
 
 
+
+/* Hébergements : légende */
 .figcaption_hergements {
     background-color: white;
     border-bottom-left-radius: 20px;
@@ -279,22 +300,25 @@ figcaption p {
     margin: 5px;
 }
 
+.etoiles{
+    font-size: smaller;
+    display: flex;
+    padding-left: 5px;
+}
+
+/* Hébergements : couleur de l'étoile */
 .fa-star::before{
     color: #0065FC;
 }
+/* Hébergements : couleur de l'étoile non check */
 .nocheck::before{
     color: #F2F2F2;
 }
 
-.h_fig{
-    margin: 5px 5px 5px 10px;
-    display: flex;
-    flex-direction: column;
-    width: 90%;
-}
 
 
 
+/* Hébergements : mise en place pour les différentes cartes*/
 .h_ {
     width: 33%;
     height: auto;
@@ -308,48 +332,49 @@ figcaption p {
 }
 
 #button_afficher {
-    padding-top: 5%;
+    padding-top: 3%;
     border: none;
     background-color: #F2F2F2;
     padding-left: 4%;
     font-size: larger;
-}
-.etoiles{
-    font-size: smaller;
-    display: flex;
-    padding-left: 5px;
+    margin-bottom: 2%;
 }
 
 
-/* les plus populaires */
 
+/* SECTION les plus populaires */
+
+/* populaire : */
 .les_plus_populaires{
     background-color: #F2F2F2;
     border-radius: 10px;
-    padding: 5px 15px 5px 15px;
+    padding: 25px;
     
 }
 
-
+/* populaire : titre*/
 #titre_populaires{
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding-top: 5px;
+    margin-bottom: -12px;
 }
-
+/* populaire :  mise en colonne */
 .populaires{
     display: block;
     flex-direction: column;
 
 }
+
+/* populaire : image et légende*/
 .p_fig{
     display: flex;
     flex-direction: row;
     width: 80%;
     justify-content: center;
 }
-
+/* populaire : image*/
 .fig_img_p {
     height: 8rem;
     width: 8rem;
@@ -358,7 +383,7 @@ figcaption p {
     border-bottom-left-radius: 20px;
     object-fit: cover;
 }
-
+/* populaire : légende */
 .figcaption_populaire {
     display: flex;
     flex-wrap: wrap;
@@ -370,9 +395,6 @@ figcaption p {
     padding: 4%;
 }
 
-#para_populaire{
-    padding-top: 5%;
-}
 
 /* activités à marseille */
 
@@ -380,11 +402,13 @@ figcaption p {
     margin-top: 5%;  
 }
 
-.titre_activites{
+#titre_activites{
     margin-left: 3%;
 }
 
+/* activite :  */
 
+/* activite :  mise en place*/
 .activites_Marseille {
     margin-right: auto;
     width: 96%;
@@ -395,10 +419,12 @@ figcaption p {
     padding-bottom: 5%;
 }
 
+/* activite :  largeur de chaque activite*/
 .width_activite{
     width: 100%;
 }
 
+/* activite :  mise en colonne de deux fois deux vignettes */
 #fort_et_iles{
     display: flex;
     flex-direction: column;
@@ -411,6 +437,8 @@ figcaption p {
     justify-content: space-between;
 }
 
+
+/* activite :  mise en page  légende et image */
 .a_fig{
     box-shadow: 0px 1px 12px 0px rgb(0 0 0 / 75%);
     border-radius: 20px;
@@ -418,8 +446,8 @@ figcaption p {
     margin: 0 5% 0 5%;
 }
 
+/* activite : image*/
 .fig_img_a{
-
         height: 388px;
         width: 100%;
         border-top-left-radius: 20px;
@@ -427,6 +455,7 @@ figcaption p {
         object-fit: cover;
        }
 
+       /* activite :  image (colonne)*/
 .fig_img_a_flex{
     height: 170px;
     width: 100%;
@@ -435,12 +464,13 @@ figcaption p {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
-
+       /* activite :  image (colonne) */
 .petit {
     height: 130px;
     width: 100%;
 }
 
+       /* activite :  legende */
 .figcaption_activite{
     display: flex;
     width: 100%;
@@ -450,10 +480,14 @@ figcaption p {
 }
 
 /* footer */
+
+
+       /* footer :  mise en page  */
 .footer{
     display: flex;
     flex-direction: row;
 }
+       /* footer : mise en page pour les 3 div   */
 .foot_ {
     background-color:#F2F2F2;
     padding-left: 20px;

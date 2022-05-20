@@ -10,10 +10,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Booki</title>
-    <link rel="stylesheet" href="CSS/normalize.css" />
-    <link rel="stylesheet" href="CSS/style.css" />
-    <link rel="stylesheet" href="CSS/mobile.css" />
-    <link rel="stylesheet" href="CSS/tablette.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/mobile.css" />
+    <link rel="stylesheet" href="css/tablette.css" />
 </head>
     <body>
         <!-- header -->
@@ -26,8 +26,8 @@
                 </div>
                 <div id="div_ul" >
                     <ul>
-                        <li><a href="#hebergements">Hébergements</a></li>
-                        <li><a href="#activites">Activités</a></li>
+                        <li><a href="#hebergements_Marseille">Hébergements</a></li>
+                        <li><a href="#titre_activites">Activités</a></li>
                     </ul>
                 </div>
             </nav>
@@ -42,8 +42,8 @@
                             <span id="filtre_form">
                                 <i id="icone_ville" class="fa-solid fa-location-dot"></i>
                                 <input type="text" name="ville" id="recherche_ville" placeholder="Marseille, France" size="30"/>
-                                <input id="bouton_rechercher" type="submit" value="Rechercher"/>
-                                <button id="bouton_loupe" type="submit"><i class="fa-solid fa-magnifying-glass"></i></Button>
+                                <input id="bouton_rechercher" type="button" value="Rechercher"/>
+                                <button id="bouton_loupe" type="button"><i class="fa-solid fa-magnifying-glass"></i></Button>
                             </span>
                         </form>
                     </div>
@@ -77,14 +77,14 @@
                     </div>
                 </section>
                 <!-- section hebergement -->
-                <section class="section_hebergements" id="#hebergements" >
+                <section class="section_hebergements"  >
                     <!-- hebergement à Marseile -->
-                    <div id="hebergements_Marseille">                        
+                    <div id="hebergements_Marseille" id="#hebergements">                        
                         <div id="titre_marseille">
                             <h2>Hébergements à Marseille</h2>
                         </div>
                         <div id="Marseille">
-                            <div class="h_ auberge">
+                            <article class="h_ auberge">
                                 <a href="#">
                                 <figure class="h_fig" >
                                     <img class="fig_img_h" src="assets/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge La Cannebière">
@@ -102,8 +102,8 @@
                                       
                                 </figure>
                             </a>  
-                            </div>
-                            <div class="h_ port">
+                            </article>
+                            <article class="h_ port">
                                 <a href="#">
                                 <figure class="h_fig">
                                     <img class="fig_img_h" src="assets/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hôtel du port">
@@ -120,8 +120,8 @@
                                         </figcaption>
                                 </figure>
                                 </a>    
-                            </div>
-                            <div class="h_ les_mouettes">
+                            </article>
+                            <article class="h_ les_mouettes">
                                 <a href="#">
                                 <figure class="h_fig">
                                     <img class="fig_img_h" src="assets/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Hôtel les mouettes">
@@ -138,8 +138,8 @@
                                         </figcaption>    
                                 </figure>
                                 </a>
-                            </div>
-                            <div class="h_ mer">
+                            </article>
+                            <article class="h_ mer">
                                 <a href="#">
                                 <figure class="h_fig">
                                     <img class="fig_img_h" src="assets/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hôtel de la mer">
@@ -156,8 +156,8 @@
                                         </figcaption>    
                                 </figure>
                             </a>
-                            </div>
-                            <div class="h_ le_panier">
+                            </article>
+                            <article class="h_ le_panier">
                                 <a href="#">
                                 <figure class="h_fig">
                                     <img class="fig_img_h" src="assets/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge Le Panier">
@@ -174,8 +174,8 @@
                                         </figcaption>
                                 </figure>
                                 </a>
-                            </div>
-                            <div class="h_ chez_amina">
+                            </article>
+                            <article class="h_ chez_amina">
                                 <a href="#">
                                 <figure class="h_fig">
                                     <img class="fig_img_h" src="assets/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hôtel chez Amina">
@@ -192,14 +192,14 @@
                                         </figcaption>
                                 </figure>
                                 </a>
-                            </div>
+                            </article>
                         </div>
                         <div>
                             <button id="button_afficher" ><strong> Afficher Plus</strong></button>
                         </div>
                     </div>
                     <!-- les plus populaires -->
-                    <div class="les_plus_populaires" >
+                    <aside class="les_plus_populaires" >
                         <div id="titre_populaires">
                             <h2>Les plus populaires</h2>
                             <i class="fas fa-chart-line"></i>
@@ -262,15 +262,15 @@
                                 </figure>
                             </div>
                         </div>
-                    </div>    
+                    </aside>    
                 </section>
                 <!-- section activité -->
                 <section class="section_activites" id="activites" >
-                    <div class="titre_activites">
+                    <div id="titre_activites">
                         <h2>Activités à Marseille</h2>
                     </div>
                     <div class="activites_Marseille">
-                        <div class="width_activite"  id="vieux_port" >    
+                        <article class="width_activite"  id="vieux_port" >    
                         <a href="#">
                             <figure class="a_fig a_flex1">
                                 <img class="fig_img_a petit_mobile" src="assets/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux port">
@@ -279,50 +279,60 @@
                                     </figcaption>
                             </figure>
                         </a>
-                        </div>
+                        </article>
                         <div class="width_activite" id="fort_et_iles" >
-                            <div class="width_activite" id="fort_de_pomegues" >
+                            <article class="width_activite" id="fort_de_pomegues" >
+                                <a href="#">
                                 <figure class="a_fig a_flex2">
                                     <img class="fig_img_a_flex" src="assets/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues">
                                         <figcaption class="figcaption_activite">
                                             <p><strong>Fort de Pomègues</strong></p>
                                         </figcaption>
                                 </figure>
-                            </div>
-                            <div class="width_activite" id="iles_du_frioul" >
+                                </a>
+                            </article>
+                            <article class="width_activite" id="iles_du_frioul" >
+                                <a href="#">
                                 <figure class="a_fig a_flex3">
                                     <img class="fig_img_a_flex petit" src="assets/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Îles du Frioul">
                                         <figcaption class="figcaption_activite">
                                             <p><strong>Îles du Frioul</strong></p>
                                         </figcaption>
                                 </figure>
-                            </div>
+                                </a>
+                            </article>
                         </div>
-                        <div class="width_activite" id="calanques" >
+                        <article class="width_activite" id="calanques" >
+                            <a href="#">
                             <figure class="a_fig a_flex4">
                                 <img class="fig_img_a petit_mobile" src="assets/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc National des Calanques">
                                 <figcaption class="figcaption_activite">
                                         <p><strong>Parc National des Calanques</strong></p>
                                 </figcaption>
                             </figure>
-                        </div>
+                            </a>
+                        </article>
                         <div class="width_activite" id="notre_dame_et_longchamp" >
-                            <div class="width_activite" id="notre_dame" >
+                            <article class="width_activite" id="notre_dame" >
+                                <a href="#">
                                 <figure class="a_fig a_flex5" >
                                     <img class="fig_img_a_flex petit" src="assets/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde">
                                     <figcaption class="figcaption_activite">
                                             <p><strong>Notre-Dame-de-la-Garde</strong></p>
                                     </figcaption>
                                 </figure>
-                            </div>
-                            <div class="width_activite" id="longchamp" >
+                                </a>
+                            </article>
+                            <article class="width_activite" id="longchamp" >
+                                <a href="#">
                                 <figure class="a_fig a_flex6">
                                     <img class="fig_img_a_flex" src="assets/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp">
                                     <figcaption class="figcaption_activite">
                                             <p><strong>Parc Longchamp</strong></p>
                                     </figcaption>
                                 </figure>
-                            </div>
+                                </a>
+                            </article>
                         </div>
                     </div>
                 </section>
