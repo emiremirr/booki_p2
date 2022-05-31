@@ -161,7 +161,9 @@
        
       }
       /* les plus polpulaires */
-
+      .les_plus_populaires {
+        padding: 25px 25px;
+    }
       
       .p_fig{
         display: flex;

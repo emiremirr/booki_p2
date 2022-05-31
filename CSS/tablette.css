@@ -131,12 +131,16 @@
 
 
       .populaires {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        }
+        display: flex;
+    flex-direction: row;
+}
     
         .les_plus_populaires {
             padding: 0 0 2% 0;
+        }
+
+        .poptablette {
+            width: 33%;
         }
 
       .p_fig{
@@ -206,11 +210,13 @@
         width: 100%;
       }
       #Marseille{
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: repeat(2, 1fr);
+            display: flex;
+            flex-direction: row;
             }
-
+        
+    #Marseille article{
+        width: 33%;
+    } 
     
     .h_ {
         width: auto;
@@ -218,15 +224,23 @@
         border-radius: 50px;
     }
     /* activités à Marseille */
-    .titre_activites{
-        justify-content: center;
-        display: flex;
+    #titre_activites{
+        text-align: center;
     }
 
+    #fort_et_iles {
+        display: flex;
+        flex-direction: row;
+        }
+    
+    #notre_dame_et_longchamp{
+        display: flex;
+        flex-direction: row;
+        }
 
-    .width_activite{
-        width: 100%;
-        align-items: center;
+    .width_activite {
+        width: 100%
+        ;
     }
 
     /* taille image activite */
@@ -246,6 +260,7 @@
 
         .a_fig img {
             height: 9rem;
+            object-position: 81% 50%;
         }
 
         .figcaption_activite {
@@ -256,33 +271,18 @@
             margin-left: 10px;
         }
         /* mise en place de la grille activite marseille*/
-        .activites_Marseille {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: repeat(2, 1fr);
+      
+            .activites_Marseille {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: unset;
             }
-
-
-        /* placement ds la grille activite */
-        #vieux_port {
-            grid-column:1 ;
-            grid-row: 1;
-        }
         
-        #fort_et_iles{
-            grid-column: 2;
-            grid-row: 1/3;
-        
-        }
-        #calanques {
-            grid-column: 1;
-            grid-row: 2;
+       
+        .activites_Marseille article {
+            width: 50%;
         }
        
-        #notre_dame_et_longchamp{
-            grid-column: 3;
-            grid-row: 1/3;
-        }
       /* footer */
 
       .footer{

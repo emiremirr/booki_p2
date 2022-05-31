@@ -242,8 +242,8 @@ nav a:hover {
     background-color: rgb(242, 242, 242);
     border-radius: 10px;
     padding: 25px 15px;
-    margin-right: 2%;
-    width: 70%;
+    margin-right: 1%;
+
 }
 
 /* Hébergements : titre de la colonne */
@@ -282,6 +282,7 @@ nav a:hover {
     border-top-right-radius: 20px;
     border: 5px solid white;
     object-fit: cover;
+    object-position: 95% 74%;
 }
 
 
@@ -291,13 +292,13 @@ nav a:hover {
     background-color: white;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-    padding-left: 15px;
+    padding-left: 10px;
     padding-bottom: 10px;
-    font-size: 80%;
+    font-size: 75%;
 }
 
 figcaption p {
-    margin: 5px;
+    margin: 1px;
 }
 
 .etoiles{
@@ -348,7 +349,7 @@ figcaption p {
 .les_plus_populaires{
     background-color: #F2F2F2;
     border-radius: 10px;
-    padding: 25px;
+    padding: 25px 0px;
     
 }
 
@@ -373,6 +374,7 @@ figcaption p {
     flex-direction: row;
     width: 80%;
     justify-content: center;
+    margin-top: 3.5%;
 }
 /* populaire : image*/
 .fig_img_p {
@@ -382,6 +384,7 @@ figcaption p {
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     object-fit: cover;
+    width: 50%;
 }
 /* populaire : légende */
 .figcaption_populaire {
@@ -393,6 +396,8 @@ figcaption p {
     border-bottom-right-radius: 20px;
     justify-content: space-between;
     padding: 4%;
+    font-size: 85%;
+    width: 37%;
 }
 
 
