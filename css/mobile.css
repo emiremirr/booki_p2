@@ -286,7 +286,7 @@
         }
 
         .a_fig img {
-            height: 14rem;
+            height: 8rem;
         }
 
         .figcaption_activite {
@@ -335,15 +335,23 @@
     .figcaption_populaire {
         font-size: large;
     }
-
-    @media screen and (max-width: 320px){
-
-        .fig_img_p { 
-            height: 6rem;
-            width: 6rem;
-        }   
-        .figcaption_populaire{
-            font-size: small;
-        }
+    .a_fig img {
+        height: 12rem;
     }
+
+    
+}
+
+@media screen and (max-width: 499px){
+
+    .fig_img_p { 
+        height: 6rem;
+        width: 6rem;
+    }   
+    .figcaption_populaire{
+        font-size: small;
+    }
+    .a_fig img {
+        height: 8rem;
+}
 }
