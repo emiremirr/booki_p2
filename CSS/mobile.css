@@ -16,9 +16,14 @@
     }
 
     #logo_mobile{
-        display:flex;
+        display: flex;
         align-items: center;
-        justify-content: center;}
+        justify-content: center;
+        width: 49%;
+        margin: auto;
+        padding-top: 20%;    
+    }
+
     nav {
         flex-direction: column;
         justify-content: center;
@@ -42,6 +47,7 @@
         width: 100%;
         border-bottom: 2px solid #F2F2F2;
         align-items: center;
+        padding: 30px 0px;
     }
 
     #div_ul{

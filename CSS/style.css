@@ -18,7 +18,7 @@ a {
 /* Header */
 
 #logo_desktop{
-    width: 30%;
+    width: 40%;
     margin-left: 10%;
 }
 
@@ -50,7 +50,7 @@ nav li{
 nav li:hover{
     color: #0065FC;
     border-top: 2px solid #0065FC;
-    padding: 40px;
+    /
 }
 
 /* changement au clic */
@@ -304,7 +304,6 @@ figcaption p {
 .etoiles{
     font-size: smaller;
     display: flex;
-    padding-left: 5px;
 }
 
 /* Hébergements : couleur de l'étoile */
