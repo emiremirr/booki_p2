@@ -47,7 +47,7 @@
         width: 100%;
         border-bottom: 2px solid #F2F2F2;
         align-items: center;
-        padding: 30px 0px;
+        padding: 15px 0px;
     }
 
     #div_ul{
@@ -150,8 +150,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 30px;
-        width: 30px;
+        height: 18px;
+        width: 20px;
         color: #0065FC;
         margin-right: 1%;
         margin-bottom: 5%;
@@ -167,8 +167,14 @@
        
       }
       /* les plus polpulaires */
+      #titre_populaires {
+
+        margin-bottom: 10px;
+    }
+
       .les_plus_populaires {
-        padding: 25px 25px;
+        padding: 25px 15px;
+        border-radius: 0;
     }
       
       .p_fig{
@@ -201,7 +207,7 @@
         justify-content: space-between;
         padding: 4%;
         flex: 1;
-        font-size: small;
+        font-size: unset;
     }
 
 
@@ -218,7 +224,6 @@
       /*  hebergement à Marseille */
       .h_fig{
         border-radius: 20px;
-        box-shadow: 0px 1px 12px 0px rgb(0 0 0 / 75%);
         margin-right: auto;
         margin-left: auto;
         margin-bottom: 5%;
@@ -253,7 +258,9 @@
 
 
     /* activités à Marseille */
-
+    #titre_activites {
+        margin-left: 6%;
+    }
 
         .section_activites{
             display: flex;
@@ -303,17 +310,21 @@
       .footer{
         display: flex;
         flex-direction: column;
+        padding: 8% 0;
+    box-sizing: content-box;
+    background-color: #F2F2F2;
+}
     }
     .foot_ {
         background-color:#F2F2F2;
-        float: left;
         width : 100%;
-        padding: 0;
+        padding-top: 5%;
     
     }
 
     .foot_ ul {
         list-style: none;
+        padding-left: 5%;
     }
 
     .foot_ li {
@@ -344,13 +355,14 @@
 
 @media screen and (max-width: 499px){
 
+    #titre_activites {
+        margin-left: 6%;
+    }
     .fig_img_p { 
         height: 6rem;
         width: 6rem;
     }   
-    .figcaption_populaire{
-        font-size: small;
-    }
+    
     .a_fig img {
         height: 8rem;
 }
