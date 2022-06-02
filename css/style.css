@@ -504,7 +504,7 @@ figcaption p {
    flex: 1;
     width : 100%;
     list-style: none;
-    padding: 3%;
+    padding: 3% 0%;
 
 }
 .foot_ ul {
