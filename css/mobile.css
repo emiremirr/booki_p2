@@ -317,8 +317,7 @@
     }
     .foot_ {
         background-color:#F2F2F2;
-        width : 100%;
-        padding-top: 5%;
+        width : 100%
     
     }
 
@@ -331,7 +330,7 @@
         margin-bottom: 3%;
     }
 
-}
+
 
 @media  (min-width:500px) and (max-width: 768px)
 {
